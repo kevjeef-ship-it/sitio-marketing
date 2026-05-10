@@ -33,19 +33,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="text-[2.5rem] sm:text-6xl md:text-8xl text-white font-display font-medium leading-[1] md:leading-[0.9] mb-6 md:mb-8"
         >
-          Construyendo el futuro con <br className="hidden md:block" /> IA y <span className="relative inline-block">
-            estrategia
-            <motion.div
-              initial={{ scale: 0, opacity: 0, rotate: 45 }}
-              animate={{ scale: 1, opacity: 1, rotate: -15 }}
-              transition={{ delay: 1.2, duration: 0.6, type: "spring" }}
-              whileHover={{ scale: 1.1, rotate: -5 }}
-              className="absolute -top-7 -right-4 md:-top-8 md:-right-16 bg-brand-lime text-slate-900 px-3 md:px-4 py-1.5 md:py-2 rounded-xl md:rounded-2xl text-[8px] md:text-xs font-black uppercase tracking-tight shadow-[0_10px_40px_rgba(163,230,53,0.5)] cursor-pointer animate-float flex items-center gap-1.5 md:gap-2 border-2 border-white/40 z-20"
-            >
-              <Zap size={10} className="md:w-3.5 md:h-3.5" fill="currentColor" strokeWidth={3} />
-              50% OFF HOY
-            </motion.div>
-          </span>
+          Construyendo el futuro con <br className="hidden md:block" /> IA y estrategia
         </motion.h1>
         
         <motion.p 

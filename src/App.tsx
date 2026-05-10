@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import LogoClouds from "./components/LogoClouds";
 import About from "./components/About";
-import Portfolio from "./components/Portfolio";
+import Benefits from "./components/Benefits";
 import WhoWeAre from "./components/WhoWeAre";
 import BentoGrid from "./components/BentoGrid";
 import Testimonials from "./components/Testimonials";
@@ -18,7 +18,7 @@ export default function App() {
     <main className="relative min-h-screen bg-white">
       <Navbar />
       <Hero />
-      <Portfolio />
+      <Benefits />
       <WhoWeAre />
       <BentoGrid />
       <Testimonials />

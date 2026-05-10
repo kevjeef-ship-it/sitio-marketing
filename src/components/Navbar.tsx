@@ -28,7 +28,7 @@ export default function Navbar() {
           <Search size={20} />
         </button>
         <button className="bg-brand-lime text-slate-900 px-4 py-2 md:px-6 md:py-2.5 rounded-full font-bold text-xs md:text-sm uppercase tracking-tight hover:scale-105 transition-transform truncate max-w-[150px] md:max-w-none">
-          Consultar Precios
+          Comprar
         </button>
         <button 
           className="md:hidden p-2 text-white"
@@ -63,14 +63,14 @@ export default function Navbar() {
             <div className="flex flex-col gap-8">
               <a href="#" className="text-3xl font-display font-medium text-white hover:text-brand-lime transition-colors">Inicio</a>
               <a href="#" className="text-3xl font-display font-medium text-white hover:text-brand-lime transition-colors">Servicios</a>
-              <a href="#" className="text-3xl font-display font-medium text-white hover:text-brand-lime transition-colors">Nosotros</a>
-              <a href="#" className="text-3xl font-display font-medium text-white hover:text-brand-lime transition-colors">Portafolio</a>
+              <a href="#about" className="text-3xl font-display font-medium text-white hover:text-brand-lime transition-colors">Nosotros</a>
+              <a href="#benefits" className="text-3xl font-display font-medium text-white hover:text-brand-lime transition-colors">Beneficios</a>
               <a href="#" className="text-3xl font-display font-medium text-white hover:text-brand-lime transition-colors">Contacto</a>
             </div>
 
             <div className="mt-auto">
               <button className="w-full bg-brand-lime text-slate-900 py-4 rounded-2xl font-bold text-lg uppercase tracking-widest">
-                Consultar Precios
+                Comprar
               </button>
             </div>
           </motion.div>
