@@ -17,9 +17,9 @@ export default function WhatsAppCTA() {
         animate={{ scale: 1, opacity: 1 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        className="fixed bottom-8 right-8 z-[60] bg-[#25D366] text-white p-4 rounded-full shadow-2xl flex items-center justify-center"
+        className="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-[60] bg-[#25D366] text-white p-3.5 md:p-4 rounded-full shadow-2xl flex items-center justify-center border-2 border-white/20"
       >
-        <MessageCircle size={32} />
+        <MessageCircle size={28} className="md:w-8 md:h-8" />
       </motion.a>
 
       {/* Hero Section CTA */}

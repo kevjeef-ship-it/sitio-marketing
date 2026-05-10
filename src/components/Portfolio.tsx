@@ -29,7 +29,7 @@ export default function Portfolio() {
   return (
     <section id="portfolio" className="py-32 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-8">
           <div className="max-w-2xl">
             <h2 className="text-4xl md:text-6xl font-display font-medium text-slate-900 mb-6">
               Impacto real a través de nuestro portafolio
@@ -40,7 +40,7 @@ export default function Portfolio() {
           </div>
           <motion.button 
             whileHover={{ scale: 1.05 }}
-            className="px-8 py-4 bg-slate-900 text-white rounded-full font-bold text-sm uppercase tracking-widest whitespace-nowrap"
+            className="px-8 py-4 bg-slate-900 text-white rounded-full font-bold text-sm uppercase tracking-widest whitespace-nowrap w-full md:w-auto"
           >
             Ver todos los proyectos
           </motion.button>

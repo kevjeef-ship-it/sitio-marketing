@@ -53,7 +53,7 @@ export default function BentoGrid() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-6 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-6 gap-4 md:gap-6">
           {services.map((service, i) => (
             <motion.div
               key={i}
@@ -62,17 +62,17 @@ export default function BentoGrid() {
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
               whileHover={{ y: -8 }}
-              className={`${service.className} rounded-[2.5rem] p-10 flex flex-col justify-between min-h-[380px] shadow-sm hover:shadow-xl transition-all group`}
+              className={`${service.className} rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-10 flex flex-col justify-between min-h-[300px] md:min-h-[380px] shadow-sm hover:shadow-xl transition-all group`}
             >
-              <div className={`${service.iconBg} w-16 h-16 rounded-2xl flex items-center justify-center mb-8`}>
+              <div className={`${service.iconBg} w-12 h-12 md:w-16 md:h-16 rounded-xl md:rounded-2xl flex items-center justify-center mb-6 md:mb-8`}>
                 {service.icon}
               </div>
               
               <div>
-                <h3 className="text-3xl font-display font-medium mb-4 group-hover:translate-x-2 transition-transform">
+                <h3 className="text-2xl md:text-3xl font-display font-medium mb-3 md:mb-4 group-hover:translate-x-2 transition-transform">
                   {service.title}
                 </h3>
-                <p className="text-lg opacity-70 leading-relaxed max-w-[280px]">
+                <p className="text-base md:text-lg opacity-70 leading-relaxed max-w-[280px]">
                   {service.description}
                 </p>
               </div>
@@ -82,19 +82,19 @@ export default function BentoGrid() {
           {/* Global Reach Small Card */}
           <motion.div 
             whileHover={{ scale: 1.02 }}
-            className="md:col-span-6 lg:col-span-6 bg-slate-100/50 border border-dashed border-slate-200 rounded-[2rem] p-8 flex items-center justify-between"
+            className="md:col-span-6 lg:col-span-6 bg-slate-100/50 border border-dashed border-slate-200 rounded-[2rem] p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6"
           >
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-slate-400">
-                <Globe size={24} />
+              <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white flex items-center justify-center text-slate-400 shrink-0">
+                <Globe size={20} className="md:w-6 md:h-6" />
               </div>
-              <p className="text-slate-500 font-medium font-display uppercase tracking-widest text-sm">
+              <p className="text-slate-500 font-medium font-display uppercase tracking-widest text-xs md:text-sm">
                 Presencia global en más de 20 países y 4 continentes
               </p>
             </div>
-            <div className="hidden md:flex -space-x-3">
+            <div className="flex -space-x-2 md:-space-x-3">
                {[...Array(5)].map((_, i) => (
-                 <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-slate-300" />
+                 <div key={i} className="w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-white bg-slate-300" />
                ))}
             </div>
           </motion.div>
